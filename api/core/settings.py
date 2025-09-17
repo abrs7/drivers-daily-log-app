@@ -28,6 +28,7 @@ load_dotenv(BASE_DIR / ".env")
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")
 CSRF_TRUSTED_ORIGINS = os.getenv("CSRF_TRUSTED_ORIGINS", "").split(",")
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -142,8 +143,13 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.AllowAny"],
 }
 
-# CORS (allow your React dev server)
 CORS_ALLOWED_ORIGINS = [
-    os.getenv("WEB_ORIGIN", "http://localhost:5173"),
+    "https://drivers-daily-log-app.vercel.app",
 ]
+
+#  allow localhost for dev:
+CORS_ALLOWED_ORIGINS += [
+    "http://localhost:5173",
+]
+
 CORS_ALLOW_CREDENTIALS = True
