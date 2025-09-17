@@ -18,7 +18,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 SECRET_KEY = 'django-insecure-nli=a(tc8%irk)i9(mcku5+(e$t5&n^9hbmp-7*&*4zk5tr7-z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "0") == "1"
 
 from pathlib import Path
 import os
