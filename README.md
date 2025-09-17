@@ -20,9 +20,9 @@ Full-stack app (Django + React) for planning truck trips with FMCSA-compliant Ho
 
 ## 📂 Project Structure
 drivers-daily-log-app/
-├── api/ # Django backend
-│ ├── core/ # urls.py, settings.py
-│ ├── routing/ # route + planner APIs
-│ ├── logs/ # log sheet renderer
-│ └── hos/ # HOS logic
-└── web/ # React frontend
+  ├── api/ # Django backend
+  │ ├── core/ # urls.py, settings.py
+  │ ├── routing/ # route + planner APIs
+  │ ├── logs/ # log sheet renderer
+  │ └── hos/ # HOS logic
+  └── web/ # React frontend
