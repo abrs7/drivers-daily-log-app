@@ -1,0 +1,58 @@
+# ---- Python / Django ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pkl
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# Django specific
+*.pid
+*.mo
+db.sqlite3
+media/
+staticfiles/
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# ---- Node / React ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build output
+dist/
+build/
+
+# Local env files
+.env
+.env.local
+.env.*.local
+
+# Vercel / Netlify
+.vercel/
+.netlify/
+
+# Coverage / testing
+coverage/
+*.coverage
+*.cover
+htmlcov/
+.tox/
+.pytest_cache/
