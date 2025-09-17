@@ -26,3 +26,32 @@ drivers-daily-log-app/
   │ ├── logs/ # log sheet renderer
   │ └── hos/ # HOS logic
   └── web/ # React frontend
+
+
+---
+
+## 🚀 Getting Started (Local)
+
+### Backend (Django)
+```bash
+cd api
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+# Run migrations
+python manage.py migrate
+
+# Start server
+python manage.py runserver 8000
+API available at: http://localhost:8000/api/
+
+Frontend (React)
+cd web
+npm install
+npm run dev
+
+
+Frontend at: http://localhost:5173/
+
+  
